@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+::before, ::after {
+    box-sizing: border-box;
+}
+.cover-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: -1;
+}
+body{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: whitesmoke;
+    background-color:#191f3a;
+}
+h3{
+    margin-left: 10px;
+
+}
+
+.header-container{
+    background-color:#191f3a;
+    display: flex;
+    padding: 12px 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;  
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #191f31;
+   width: 100%;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+    min-height: 35px;
+    padding: 0 15px;
+}
+
+.logo-section h3{
+    font-size: 25px;
+}
+.menu-button{
+    display:flex-end;
+    text-align: center;
+    appearance: auto;
+}
+.nav-button{
+    height: 38px;
+    width: 46px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+
+}
+span{
+    position: relative;
+    display: flex-end;
+}
+
+   /* ----------------HEADER END---------------- */
+.cover-section{
+    position: 0;
+    overflow: hidden;
+    display: block;
+}
+/* .cover-section.background-cover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/pexels-pixabay-511763.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+} */
+.background-cover{
+     position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/home-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    display: block;
+   
+}
+
+    .container{
+        max-width: 1170px;
+        margin: auto;
+        
+
+    }
+
+.cover-center-area{
+    padding: 100px 0;
+    min-height: 100vh;
+    align-items: center;
+    display: flex; 
+    flex-wrap: wrap;  
+}
+
+.center-text{
+    padding: 0 15px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    
+}
+div{
+    display: block;
+}
+
+h1{
+    display: block;
+    color: azure;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin: 0 0 5px;
+}
+
+/* ----------------about us section-------------------- */
+
+.About-us-Section{
+    padding: 90px 0;
+    overflow: hidden;
+    display: flex;
+    
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    display: block;
+
+}
+.About-us{
+    /* display:flex;
+    flex-wrap: wrap; */
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.About{
+    display: flex;
+    box-sizing: border-box;
+}
+.About-us-Details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+
+}
+
+.info{
+padding: 0 15px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.info h3 {
+    font-weight: 500;
+    text-transform:capitalize;
+    margin:0 0 15px;
+    display: block;
+    color: whitesmoke;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.info p{
+
+    margin:0 0 15px ;
+    font-size: 15px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.info .btn{
+    margin: 15px 0 0;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #eaa023;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: transparent;
+    border: 2px solid;
+
+    
+}
+.btn-default{
+    border:2x solid #eaa023;
+}
+.btn-default:hover {
+    color:white;
+    background-color:#eaa023;
+}
+
+a{
+    text-decoration: none;
+}
+.image-section{
+padding: 0 15px;
+width: 50%;
+
+}
+
+.image-section .image{
+    position: relative;
+     width: 100%;
+    border-radius: 10px;
+}
+.image-section .image{
+    width: 100%;
+}
+
+
+.image h3{
+    color: #000000;
+    left: 300px;
+    position: absolute;
+
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 30px;
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+ .image img{
+    width: 100%;
+    min-height: 10px;
+    vertical-align: middle;
+}
+/* -----------------------OUR MENU------------------------- */
+
+.menu-section{
+padding-bottom: 80px;
+padding-top: 80px;
+overflow: hidden;   
+}
+.container{
+
+
+}
+.title-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+}
+.menu-cards{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+font-size:16px;
+font-weight: 300;
+padding: 0 15px;
+width: 100%;
+text-align: center;
+margin-bottom: 20px;
+
+}
+.menu-cards-item-1{
+    display:flex;
+    justify-content: space-between;
+    /* font-size:16px;
+    font-weight: 300;
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; */
+
+}
+.menu-card-item-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    margin-bottom: 8px;
+}
+.menu-cards-item-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-cards-item-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu-cards-item-price
+{
+    display: flex;
+
+}
+
+/* -----------------------footer section------------------ */
+
+.footer-section{
+ padding: 50px 0 0;
+ background-image: url("img/pexels-yente-van-eynde-2403392.jpg");
+ background-size:cover ;
+ background-position:center ;
+ background-attachment: fixed;
+ position: relative;
+ z-index: 1;
+}
+.main-container{
+    max-width: 1170px;
+    margin: auto;
+}
+.first-row{
+display: flex;
+flex-direction: row;
+align-content: flex-end;
+justify-content: space-evenly;
+}
+.links{
+    display: flex;
+    align-content: stretch;
+    justify-content: space-evenly;
+    color: white;
+}
+.links a{
+    color: whitesmoke;
+}
+
+.second-row{
+ display: flex;
+ justify-content: center;
+}
+.second-row p{
+    font-size: 10px;
+}
+
+.footer-item-1,
+.footer-item-1,
+.footer-item-1{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.first-row{
+    font-size: 10px;
+}
+.second-row .footer-end{
+    font-size: 10px;
+}
+
+
+
